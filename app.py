@@ -93,6 +93,6 @@ def index():
                            variable_list=variable_list, selected_variable=selected_variable)
 
 if __name__ == "__main__":
-    port = int(os.environ.get("PORT", 5000))  # Render otomatik olarak PORT değişkeni tanımlar
+    port = int(os.environ.get("PORT", 10000))  # Render otomatik olarak PORT değişkeni tanımlar
     app.run(host='0.0.0.0', port=port)
     app.run(debug=False)
