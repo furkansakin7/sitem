@@ -6,4 +6,3 @@ plotly
 scikit-learn
 gunicorn
 xgboost
-os
