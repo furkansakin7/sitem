@@ -31,15 +31,15 @@ def index():
     
     # Grafik 1 - Gerçek ve Tahmin Kp Değeri
     fig1 = px.line(data, x='Datetime', y=['Kps'], 
-                   title='Gerçek ve Tahmin Kp Değeri (3 saat sonrası)')
-    fig1.update_traces(name='Gerçek Kp', line=dict(color='blue'))
-    fig1.add_scatter(x=data['Datetime'], y=data['Predicted_Kp'], mode='lines', name='Tahmin Kp', line=dict(color='red'))
+                   title='Gerçek ve Tahmin PC Değeri')
+    fig1.update_traces(name='Gerçek PC', line=dict(color='blue'))
+    fig1.add_scatter(x=data['Datetime'], y=data['Predicted_Kp'], mode='lines', name='Tahmin PC', line=dict(color='red'))
     fig1.update_layout(
         plot_bgcolor="#101c33", 
         paper_bgcolor="#101c33", 
         font_color="white",
         xaxis_title="Datetime",
-        yaxis_title="Kps / Predicted Kps",
+        yaxis_title="PC / Predicted PC",
         legend_title="Değişkenler", 
         xaxis=dict(
             showgrid=False,
