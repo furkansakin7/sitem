@@ -54,7 +54,7 @@ def index():
     if request.method == 'POST':
         if request.form.get('input_1'):
             # Kullanıcıdan alınan inputları işleyin
-            inputs = [float(request.form[f'input_{i}']) for i in range(1, 17)]
+            inputs = [float(request.form[f'input_{i}']) for i in range(1, 11)]
             
             # Tahmin yapın
             prediction = model.predict([inputs])[0]
